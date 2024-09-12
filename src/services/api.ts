@@ -3,7 +3,7 @@ import { Root } from "../models";
 import { formatDateWithSlashes } from "../utils/dateUtils";
 
 // Base URL for the Wikipedia API
-const BASE_URL = "https://api.wikimedia.org/feed/v1/wikipedia";
+const BASE_URL = process.env.REACT_APP_API_BASE_URL; 
 
 // Function to fetch featured content from the Wikimedia API using URL only (no token)
 export const fetchFeaturedContent = async (
@@ -11,8 +11,8 @@ export const fetchFeaturedContent = async (
   language: string
 ): Promise<Root> => {
   const formattedDate = formatDateWithSlashes(date); // Format date as YYYY/MM/DD
-  
-  const url = `${BASE_URL}${language}/featured/${formattedDate}`;
+
+  const url = `${BASE_URL}/${language}/featured/${formattedDate}`;
 
   try {
     const response = await axios.get<Root>(url);

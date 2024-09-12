@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   const [content, setContent] = useState<Root | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [itemsPerPage, setItemsPerPage] = useState<number>(5);
+ const [itemsPerPage] = useState<number>(5);
 
   useEffect(() => {
     setLoading(true);
