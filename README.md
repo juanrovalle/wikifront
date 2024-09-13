@@ -53,7 +53,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 # Bonus Features Bonus
 
 ## 1- Docker Compose Support
-## Docker Compose Support
 
 This project includes support for **Docker Compose**, allowing you to easily build and run the app in a containerized environment.
 
