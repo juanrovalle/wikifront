@@ -3,6 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@capacitor/android": "^6.1.2",
+        "@capacitor/cli": "^6.1.2",
+        "@capacitor/core": "^6.1.2",
         "@types/jest": "^27.5.2",
         "@types/node": "^16.18.108",
         "@types/react": "^18.3.5",

@@ -43,6 +43,11 @@ const Home: React.FC = () => {
       <h1>Wikipedia Featured Content</h1>
       <DatePicker selectedDate={date} onDateChange={setDate} />
       <LanguageSelector selectedLanguage={language} onLanguageChange={setLanguage} />
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={setCurrentPage}
+      />
 
       {loading ? (
         <p>Loading...</p>
@@ -60,11 +65,7 @@ const Home: React.FC = () => {
         </div>
       )}
 
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={setCurrentPage}
-      />
+
     </div>
   );
 };

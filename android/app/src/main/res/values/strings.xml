@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">wikifront</string>
+    <string name="title_activity_main">wikifront</string>
+    <string name="package_name">com.wikifront.app</string>
+    <string name="custom_url_scheme">com.wikifront.app</string>
+</resources>
